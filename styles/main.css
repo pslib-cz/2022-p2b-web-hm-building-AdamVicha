@@ -1,0 +1,54 @@
+header {
+    background-image: url(../media/pageheader-1920w.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 30px 35px;
+}
+
+span {
+    background-color: #EB6C27;
+    padding: 30px 35px;
+}
+
+mark {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.header-text {
+    padding-top: 50rem;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    padding-bottom: 0,1px;
+}
+
+.title-under {
+    padding-bottom: 5rem;
+}
