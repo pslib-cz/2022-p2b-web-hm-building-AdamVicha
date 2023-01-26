@@ -11,65 +11,72 @@
 <body>
     <header>
         <nav class="navbar">
-            <img src="media/logo.png">
-            <div class="hamburger-menu">
-                <div class="menu">
-                    <ul>
-                        <li><span>DOMŮ</span></li>
-                        <li>SLUŽBY</li>
-                        <li>REFERENCE</li>
-                        <li>O NÁS</li>
-                        <li>KONTAKT</li>
-                    </ul>
-                </div>
-            </div>
+            <img class="navbar__logo" src="./media/logo.png" alt="logo">
+            <menu class="navbar__menu">
+                <li><a href="index.html"><span>DOMŮ</span></a></li>
+                <li><a href="#">SLUŽBY</a></li>
+                <li><a href="reference.html">REFERENCE</a></li>
+                <li><a href="o_nas.html">O NÁS</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </menu>
         </nav>
-        <h1 class="title">HM Building.cz s.r.o.</h1>
-        <h3 class="title-under">liberecká stavební společnost</h3>
+
+        <div class="header-text"> 
+            <h1 class="title">HM Building.cz s.r.o.</h1>    
+            <h3 class="title-under">liberecká stavební společnost</h3>
+        </div>
     </header>
 
     <article class="index-main">
-        <figure class="index-figure">
+        <div class="index-main__title">
             <h2>Využijte škálu našich <mark>služeb</mark></h2>
             <p>Ačkoliv provádíme především <b>průmyslové stavby</b>, není pro nás problém postavit Vám <b>rodinný domek na klíč</b>, nebo jen hrubou stavbu. Nejsou nám cizí ani <b>rekonstrukce budov</b> a jejich údržba a to včetně okolních ploch</p>
-        </figure>
+        </div>
+    </article>
 
-        <figure class="index-figure">
-            <img src="media/sluzba-novostavby-1200w.jpg" class="">
+    <article class="index-sluzby">
+        <div class="index-ukazka">
+            <picture class="index-image">
+                <img src="media/sluzba-novostavby-1200w.jpg" class="image-left">
+            </picture>
             <h3>Novostavby</h3>
             <p>Dle požadavků investora jsme schopní dodat <b>kompletní stavbu na klíč</b>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci. Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
             <a href="#">Zobrazit více</a>
-        </figure>
+        </div>
 
-        <figure class="index-figure">
-            <img src="media/sluzba-prumyslove-stavby-1920w.jpg" class="">
+        <div class="index-ukazka">
+            <picture class="index-image">
+                <img src="media/sluzba-prumyslove-stavby-1920w.jpg" class="image-right">
+            </picture>
             <h3>Průmyslové stavby</h3>
             <p>Realizujeme <b>průmyslové objekty ocelové konstrukce</b>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se <b>dostáváme na přijatelné ceny</b>.</p>
             <a href="#">Zobrazit více</a>
-        </figure>
+        </div>
 
-        <figure class="index-figure">
-            <img src="media/sluzba-rekonstrukce-1920w.jpg" class="">
+        <div class="index-ukazka">
+            <picture class="index-image">
+                <img src="media/sluzba-rekonstrukce-1920w.jpg" class="image-left">
+            </picture>
             <h3>Rekonstrukce domů a jiných staveb</h3>
             <p>Provádíme veškeré práce spojené s <b>rekonstrukcí stávajících objektů</b>. Pro naše klienty zajišťujeme dodatečné izolování objektů, <b>zateplení objektů</b>, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
             <a href="#">Zobrazit více</a>
-        </figure>
+        </div>
 
-        <figure class="index-figure">
-            <img src="media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" class="">
+        <div class="index-ukazka">
+            <picture class="index-image">
+                <img src="media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" class="image-right">
+            </picture>
             <h3>Komunikace a zpevněné plochy</h3>
             <p>Komunikace a zpevněné plochy provádíme včetně <b>zemních prací, konstrukcí podkladních</b> a souvisejících objektů, jako jsou <b>odvodnění, zpevnění svahů, opěrné zdi atd.</b></p>
             <a href="#">Zobrazit více</a>
-        </figure>
-
+        </div>
     </article>
 
     <section class="presvedcit">
-        <h3>Naše firma nabízí své služby 
-            ve stavebnictví od roku 2015.
-            <br><br>
-            Za kvalitu naší práce ručíme. </h3>
-            <a href="#">Přesvědčit se</a>
+        <h3>Naše firma nabízí své služby ve stavebnictví od roku 2015.
+        <br><br>
+        Za kvalitu naší práce ručíme. </h3>
+        <a href="#">Přesvědčit se</a>
     </section>
 
     <article class="index-reference">
@@ -97,7 +104,7 @@
     <footer>
         <h2>Plácneme si pro váš projekt?</h2>
         <p>Nezávazně nás kontaktujte a domluvme vše potřebné</p>
-        <a href="#">Nezávazně poptat</a>
+        <a href="kontakt.html">Nezávazně poptat</a>
     </footer>
 </body>
 </html>
