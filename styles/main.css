@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 header {
     background-image: url(../media/pageheader-1920w.jpg);
     background-position: center center;
@@ -91,7 +90,8 @@ mark {
     padding: 0;
     object-fit: cover;
     border-radius: 0px 0px 40px 0px;
-=======
+}
+
 header {
     background-image: url(../media/pageheader-1920w.jpg);
     background-position: center center;
@@ -145,5 +145,4 @@ mark {
 
 .title-under {
     padding-bottom: 5rem;
->>>>>>> d658237847588e0108c624bc2610a8ab0ff6eae2
 }
