@@ -1,3 +1,12 @@
+@font-face{
+    font-family: 'Open sans';
+    src:url(../font/open-sans.ttf)
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
 header {
     background-image: url(../media/pageheader-1920w.jpg);
     background-position: center center;
@@ -44,7 +53,9 @@ mark {
     display: block;
     justify-content: center;
     text-align: center;
+    color: white;
 }
+
 
 .title {
     padding-bottom: 0,1px;
@@ -145,4 +156,16 @@ mark {
 
 .title-under {
     padding-bottom: 5rem;
+}
+
+footer {
+    height: max-content;
+    background-color: #EB6C27;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
