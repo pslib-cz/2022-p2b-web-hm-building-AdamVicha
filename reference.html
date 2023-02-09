@@ -9,49 +9,63 @@
     <title>Reference</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar__logo">
-            <img src="media/logo.png">
-        </div>
-        <div class="hamburger-menu">
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">DOMŮ</a></li>
-                    <li><a href="index.html">SLUŽBY</a></li>
-                    <li><a href="reference.html"><span>REFERENCE</span></a></li>
-                    <li><a href="o_nas.html">O NÁS</a></li>
-                    <li><a href="kontakt.html">KONTAKT</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <article class="">
-        <h2>Reference</h2>
+    <header class="other-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="./media/logo.png"></a>
+            <menu class="hamburger-menu menu-hidden">
+                <li><a href="index.html"><span>DOMŮ</span></a></li>
+                <li><a href="#">SLUŽBY</a></li>
+                <li><a href="reference.html">REFERENCE</a></li>
+                <li><a href="o_nas.html">O NÁS</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </menu>
+            <a href="javascript:void(0)" class="hamburger-button">MENU</a>
+        </nav>
+    </header>
+    
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-button");
+        for (const btn of hamburgerButtons) {
+            btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".hamburger-menu")
+                for (const menu of menus) {
+                    menu.classList.toggle("menu-hidden")
+                }
+            }
+        }
+    </script>
+    
+    <article class="main">
+        <div class="main-title">
+            <h1>Reference</h1>
             <p>Stojí za námi <b>kvalitně vyhotovené zakázky</b> dle konkrétních požadavků zadavatelů <b>podepřené letitými zkušenostmi ve stavebnictví.</b> To, že <b>obrátit se na právě nás je vhodná volba potvrdí naši klienti</b>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
-        <div class="">
-            <div class="">
-                <a href="hasicska_zbrojnice.html"><img src="/media/reference/reference-hasicska-zbrojnice-600w.jpg"></a>
+        </div>
+
+        <div class="index-reference">
+            <div class="reference-img">
+                <img src="./media/reference/reference-hasicska-zbrojnice-600w.jpg">
                 <h3>Hasičská zbrojnice</h3>
                 <p>celková rekonstrukce</p>
             </div>
-            <div class="">
-                <a href="samoobsluzna_pradelna.html"><img src="/media/reference/reference-pradelna-600w.jpg"></a>
+
+            <div class="reference__img">
+                <img src="./media/reference/reference-pradelna-600w.jpg">
                 <h3>Samoobslužná prádelna</h3>
                 <p>stavební úpravy a opravy</p>
             </div>
-            <div class="">
-                <a href="venkovni_plochy.html"><img src="/media/reference/reference-plocha-600w.jpg"></a>
+
+            <div class="reference__img">
+                <img src="./media/reference/reference-plocha-600w.jpg">
                 <h3>Venkovní plochy Restyl</h3>
                 <p>provedení venkovních ploch</p>
             </div>
         </div>
     </article>
 
-    <footer>
-        <h2>Plácneme si pro váš projekt?</h2>
-        <p>Nezávazně nás kontaktujte a domluvme vše potřebné</p>
-        <a href="kontakt.html">Nezávazně poptat</a>
+    <footer class="index-footer">
+        <h2>Plácneme si pro Váš projekt?</h2>
+        <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <a href="#" class="button button-footer">Nezávazně poptat</a>
     </footer>
 </body>
 </html>
