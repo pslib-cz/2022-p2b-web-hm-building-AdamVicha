@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <title>Hasičská zbrojnice</title>
+</head>
+<body>
+    <header class="other-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="./media/logo.png"></a>
+            <menu class="hamburger-menu menu-hidden">
+                <li><a href="index.html"><span>domů</span></a></li>
+                <li><a href="index.html">služby</a></li>
+                <li><a href="reference.html">reference</a></li>
+                <li><a href="o_nas.html">o nás</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+            </menu>
+            <a href="javascript:void(0)" class="hamburger-button">menu</a>
+        </nav>
+        </nav>
+    </header>
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger-button");
+        for (const btn of hamburgerButtons) {
+            btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".hamburger-menu")
+                for (const menu of menus) {
+                    menu.classList.toggle("menu-hidden")
+                }
+            }
+        }
+    </script>
+
+    <div class="main">
+        <div class="main-title">
+            <h1>Hasičská zbrojnice</h1>
+            <p>Celková rekonstrukce hasičské zbrojnice v Rynolticích.</p>
+        </div>
+        <div class="galery">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-01.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-02.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-03.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-04.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-05.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-06.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-07.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-08.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-09.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-10.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-11.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-12.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-14.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-15.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-16.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-17.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-18.jpeg">
+            <img src="./media/reference/hasicska-zbrojnice/reference-hz-last.jpeg">
+        </div>
+    </div>
+
+    <footer class="index-footer">
+        <h2>Plácneme si pro Váš projekt?</h2>
+        <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <a href="#" class="button button-footer">Nezávazně poptat</a>
+    </footer>
+</html>

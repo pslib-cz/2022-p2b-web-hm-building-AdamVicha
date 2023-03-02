@@ -331,6 +331,10 @@ a {
     margin: 50px;
 }
 
+.o_nas-title {
+    text-align: center;
+}
+
 .o_nas ul {
     list-style: none;
 }
@@ -357,6 +361,16 @@ a {
 
 .reference-img img {
     width: 100%;
+}
+
+.galery {
+    display: flex;
+    flex-direction: column; 
+    gap: 1em;                                             
+}
+
+.galery img {
+    max-width: 300px;
 }
 
 @media (max-width: 768px)
@@ -577,5 +591,15 @@ a {
     .index-reference {
         display: flex;
         flex-direction: row;
+    }
+
+    .galery {
+        display: grid;                                                     
+        grid-template-columns: repeat(auto-fill, 300px);
+        grid-auto-rows: auto;
+        grid-gap: 20px;
+        max-width: 960px;
+        margin: 0 auto;
+        justify-content: center;
     }
 }
