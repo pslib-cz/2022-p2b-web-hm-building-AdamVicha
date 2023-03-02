@@ -239,12 +239,10 @@ a {
 
 .index-reference
 {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .main
 {
@@ -270,7 +268,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: min-content;
 }
 
@@ -355,6 +353,10 @@ a {
 
 .section-sluzby li::before {
     content: "• "; color: #EB6C27;
+}
+
+.reference-img img {
+    width: 100%;
 }
 
 @media (max-width: 768px)
@@ -545,14 +547,12 @@ a {
 
     .index-reference
     {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
         max-width: 1300px;
         width: 100%;
         height: 100%;
-        display: block;
         margin: 0;
         padding: 0;
+        gap: 0.5em;
         object-fit: cover;
     }
     .reference-img > a
@@ -572,5 +572,10 @@ a {
     .section-sluzby {
         margin-top: 100px;
         margin-bottom: 100px;
+    }
+
+    .index-reference {
+        display: flex;
+        flex-direction: row;
     }
 }
